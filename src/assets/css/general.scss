@@ -1,0 +1,169 @@
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background: #fafafa;
+}
+
+
+/* begin general style */
+.custom-file-control:read-only,
+.form-control:read-only {
+  background: none;
+}
+
+.rp-input-wrapper {
+  padding: 5px 0;
+  background: #fff;
+}
+
+.rp-input-wrapper input,
+.rp-input-wrapper select {
+  font-size: 16px;
+  height: 32px !important;
+  padding: 5px;
+  line-height: 1;
+}
+
+.table thead th {
+  vertical-align: top !important;
+}
+/* end general style */
+
+/* begin style for tabs */
+.nav-tabs:focus {
+  outline: none;
+}
+
+.tab-content {
+  padding: 20px 0;
+}
+
+.tabs {
+  width: 100%;
+}
+
+.table {
+  min-height: 200px;
+}
+
+.nav-tabs .nav-link:hover {
+  border-color: #dee2e6;
+}
+
+.nav-tabs .nav-link.active {
+  border-color: #009688;
+}
+/* end style for tabs */
+
+/* begin style for per page block */
+.rp-status {
+  cursor: pointer;
+}
+/* end style for per page block */
+
+
+/* begin style for per page block */
+.rp-perPage {
+
+  legend {
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    + div {
+      border: 1px solid #999;
+      position: relative;
+
+      &::after {
+        content: '';
+        background: url("/static/img/icon-select.png") no-repeat;
+        background-size: contain;
+        height: 7px;
+        width: 14px;
+        position: absolute;
+        right: 6px;
+        top: 14px;
+      }
+
+      select {
+        position: relative;
+
+        &:focus {
+          box-shadow: none;
+        }
+      }
+    }
+  }
+}
+/* end style for per page block */
+
+/* begin style for search block */
+.rp-search-wrapper .input-group {
+  flex-direction: row-reverse;
+}
+
+.rp-search-wrapper .btn {
+  padding: 2px 10px;
+}
+
+.rp-search-wrapper .input-group-text {
+  padding: 0;
+}
+/* end style for search block */
+
+
+/* begin style for table */
+.rp-table-wrapper {
+  position: relative;
+
+  .rp-run-all {
+    position: absolute;
+    bottom: 20px;
+    left: 15%;
+  }
+
+  .rp-run-all2 {
+    position: absolute;
+    bottom: 20px;
+    left: 15%;
+  }
+}
+
+.table thead th,
+.table.condensed thead th {
+  padding-right: 20px !important;
+
+  &:first-child {
+    text-align: center !important;
+    padding-right: 5px !important;
+  }
+
+  &.sorting {
+    position: relative;
+    cursor: pointer;
+    text-align: left !important;
+
+    &::after {
+      top: 5px;
+      right: 5px !important;
+    }
+  }
+
+  input {
+    padding: 4px 7px !important;
+  }
+}
+/* end style for table */
+
+/*  begin style for logo  */
+.rp-logo {
+  background: url("/static/img/logo-black.svg") no-repeat;
+  background-size: contain;
+  height: 40px;
+  width: auto;
+}
+/*  end style for logo  */
+
+
+@import 'media';
